@@ -13,6 +13,7 @@ function calculateBMI() {
     // Hitung BMI
     const bmi = weight / (height * height);
     let status = "";
+    let penjelasanStatus = "";
 
     // Tentukan status berdasarkan nilai BMI
     if (bmi < 18.5) {
@@ -23,6 +24,7 @@ function calculateBMI() {
         status = "Kelebihan berat badan";
     } else {
         status = "Kegemukan (Obesitas)";
+        penjelasanStatus = " Hasil BMI dianatara";
     }
 
     // Tampilkan hasil
@@ -33,4 +35,11 @@ function calculateBMI() {
         <p>Status Berat Badan: ${status}</p>
     `;
     resultDiv.style.display = 'block';
+
+    const penjelasanDiv = document.getElementById('penjelasan');
+    penjelasanDiv.innerHTML = `
+        <h4>Hasil BMI</h4>
+        <p>BMI Anda: ${penjelasanStatus}</p>
+    `;
+    penjelasanDiv.style.display = 'block';
 }
