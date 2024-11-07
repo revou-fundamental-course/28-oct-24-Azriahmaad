@@ -24,7 +24,9 @@ function calculateBMI() {
         status = "Kelebihan berat badan";
     } else {
         status = "Kegemukan (Obesitas)";
-        penjelasanStatus = " Hasil BMI dianatara";
+        penjelasanStatus = " Hasil BMI diantara 23 dan 25
+Anda berada dalam kategori overweight atau berat badan berlebih. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga. Jika BMI Anda berada dalam kategori ini maka 
+    Anda dianjurkan untuk menurunkan berat badan hingga batas normal.";
     }
 
     // Tampilkan hasil
